@@ -1,0 +1,9 @@
+{
+  "format_version": "1.19.70",
+  "minecraft:block": {
+    "description": {
+      "identifier": "namespace:block_id"
+    },
+    "components": {}
+  }
+}
