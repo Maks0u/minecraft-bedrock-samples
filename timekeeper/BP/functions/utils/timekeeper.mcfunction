@@ -2,6 +2,8 @@
 
 # SETUP
 scoreboard objectives add tick dummy
+scoreboard objectives add tick_increment dummy
+# scoreboard players set timekeeper tick_increment 1
 
 scoreboard objectives add second dummy
 scoreboard objectives add second_display dummy
@@ -30,4 +32,4 @@ scoreboard players operation timekeeper tenth /= timekeeper tick_per_tenth
 scoreboard players operation timekeeper tenth %= timekeeper tenth_per_second
 
 # RUN
-scoreboard players add timekeeper tick 1
+scoreboard players operation timekeeper tick += timekeeper tick_increment
